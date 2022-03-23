@@ -532,4 +532,69 @@ section {
   top: 0;
   width: 40%;
 }
+
+.timeline {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  padding-bottom: 3rem;
+}
+
+.timeline .timeline-item {
+  border-left: 1px solid var(--color-grey-5);
+  padding-left: 3rem;
+  position: relative;
+}
+
+.timeline .timeline-item .timeline-icon {
+  background-color: var(--color-secondary);
+  position: absolute;
+  left: -22px;
+  top: 0;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.timeline .timeline-item .timeline-icon i {
+  font-size: 1.3rem;
+}
+
+.timeline .timeline-item .timeline-duration {
+  background-color: var(--color-grey-5);
+  border-radius: 15px;
+  display: inline-block;
+  font-size: .8rem;
+  font-weight: 500;
+  padding: .2rem .6rem;
+  text-transform: uppercase;
+}
+
+.timeline .timeline-item h5 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 1rem 0;
+  text-transform: uppercase;
+}
+
+.timeline .timeline-item h5 span {
+  color: var(--color-grey-2);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.timeline .timeline-item p {
+  color: var(--color-grey-1);
+}
 /*# sourceMappingURL=styles.css.map */
