@@ -209,19 +209,6 @@ section {
   }
 }
 
-// About Section
-.about-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 3.5rem 0 5rem 0;
-  
-  .right-about-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
-  }
-}
-
 
 // reusables
 .btn-container {
@@ -276,7 +263,7 @@ section {
 }
 
 
-// ABOUT section
+// ABOUT
 .main-title {
   text-align: center;
 
@@ -302,5 +289,18 @@ section {
       font-size: 6.2rem;
       font-weight: 800;
     }
+  }
+}
+
+// About: Section
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3.5rem 0 5rem 0;
+  
+  .right-about-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
   }
 }

@@ -261,22 +261,6 @@ section {
   line-height: 2rem;
 }
 
-.about-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  padding: 3.5rem 0 5rem 0;
-}
-
-.about-container .right-about-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;
-}
-
 .btn-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -368,5 +352,21 @@ section {
   z-index: -1;
   font-size: 6.2rem;
   font-weight: 800;
+}
+
+.about-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  padding: 3.5rem 0 5rem 0;
+}
+
+.about-container .right-about-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
 }
 /*# sourceMappingURL=styles.css.map */
