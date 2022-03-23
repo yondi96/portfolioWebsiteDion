@@ -369,4 +369,148 @@ section {
       grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
 }
+
+.about-container .right-about-container .about-item {
+  border: 1px solid var(--color-grey-5);
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+  -webkit-transition: var(--transition-1);
+  transition: var(--transition-1);
+}
+
+.about-container .right-about-container .about-item:hover {
+  border: 1px solid var(--color-secondary);
+  -webkit-box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.32);
+          box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.32);
+  cursor: default;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.about-container .right-about-container .about-item .about-text {
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-container .right-about-container .about-item .about-text .large-text {
+  color: var(--color-secondary);
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.about-container .right-about-container .about-item .about-text .small-text {
+  color: var(--color-grey-2);
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  padding-left: 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.about-container .right-about-container .about-item .about-text .small-text::before {
+  background-color: var(--color-grey-5);
+  content: '';
+  height: 2px;
+  left: 0;
+  position: absolute;
+  top: 15px;
+  width: 2rem;
+}
+
+.about-container .left-about-container {
+  padding-right: 5rem;
+}
+
+.about-container .left-about-container p {
+  color: var(--color-grey-1);
+  line-height: 1.8rem;
+  padding: 1rem;
+}
+
+.about-container .left-about-container h4 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.about-stats {
+  padding-bottom: 4rem;
+}
+
+.about-stats .progress-bars {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+.about-stats .progress-bars .progress-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-stats .progress-bars .progress-bar .progress-title {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.about-stats .progress-bars .progress-bar .progress-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-stats .progress-bars .progress-bar .progress-container .progress-text {
+  color: var(--color-grey-3);
+}
+
+.about-stats .progress-bars .progress-bar .progress-container .progress {
+  position: relative;
+  margin-left: 1rem;
+  background-color: var(--color-grey-4);
+  height: .44rem;
+  width: 100%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-container .progress span {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: var(--color-secondary);
+  -webkit-transition: var(--transition-1);
+  transition: var(--transition-1);
+  width: 60%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-container .progress .excel {
+  width: 40%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-container .progress .sql {
+  width: 30%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-container .progress .python {
+  width: 20%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-container .progress .tableau {
+  width: 50%;
+}
 /*# sourceMappingURL=styles.css.map */
