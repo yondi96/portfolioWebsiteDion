@@ -513,4 +513,23 @@ section {
 .about-stats .progress-bars .progress-bar .progress-container .progress .tableau {
   width: 50%;
 }
+
+.stat-title {
+  font-size: 1.4rem;
+  padding: 3.5rem 0;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.stat-title::before {
+  background-color: var(--color-grey-5);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  content: '';
+  height: 1px;
+  left: 50%;
+  top: 0;
+  width: 40%;
+}
 /*# sourceMappingURL=styles.css.map */
