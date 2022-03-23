@@ -1,5 +1,5 @@
 const sections = document.querySelectorAll(".section"),
-      btnSection = document.querySelector(".controls"),
+      btnSection = document.querySelectorAll(".controls"),
       allBtn = document.querySelectorAll(".control"),
       body = document.querySelector(".main");
 
@@ -13,6 +13,27 @@ function pageTransitions() {
       this.className += " active-btn";
     })
   }
+
+  // SECTIONS: active class
+  body.addEventListener('click', (e) => {
+    const id = e.target.dataset.id;
+    if(id) {
+      // remove selected btn
+      btnSection.forEach((btn) => {
+        btn.classList.remove("active");
+      })
+      e.target.classList.add("active");
+
+      // hide section not used
+      sections.forEach((section) => {
+        section.classList.remove("active");
+      })
+
+      const element = document.getElementById(id);
+      element.classList.add("active");
+    }
+  })
+
 }
 
 pageTransitions();

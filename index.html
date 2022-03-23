@@ -9,25 +9,26 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet">
-  
-  <!-- ! font awesome not properly setup -->
+  <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="code.js" defer></script>
   <title>Dion's Place</title>
 </head>
 <body class="main">
-  <header class="section section1 header active">
+  <header class="section section1 header active" id="home">
 
   </header>
 
   <main>
-    <section class="section section2 about"></section>
-    <section class="section section3 portfolio"></section>
-    <section class="section section4 contact"></section>
+    <section class="section section2 about" id="about"></section>
+    <section class="section section3 portfolio" id="portfolio"></section>
+    <section class="section section4 contact" id="contact"></section>
   </main>
   
+
+  <!-- * controls -->
   <div class="controls">
-    <div class="control ctrl1 active-btn">
+    <div class="control ctrl1 active-btn" data-id="home">
       <i class="fa-solid fa-house"></i>
     </div>
     <div class="control ctrl2" data-id="about">

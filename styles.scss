@@ -63,24 +63,33 @@ section {
 }
 
 .section1 {
+  background-color: red;
   display: none;
   transform: translateY(0) scale(1);
 }
 
 .section2 {
+  background-color: green;
   display: none;
   transform: translateY(0) scale(1);
 }
 
 .section3 {
+  background-color: red;
   display: none;
   transform: translateY(0) scale(1);
 }
 
 
 .section4 {
+  background-color: green;
   display: none;
   transform: translateY(0) scale(1);
+}
+
+// * ACTIVE CLASS
+.active {
+  display: block;
 }
 
 
