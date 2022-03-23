@@ -6,7 +6,6 @@
   padding: 0;
 }
 
-/* for dark mode: changing colors */
 :root {
   --color-primary: #3A3845;
   --color-secondary: #C69B7B;
@@ -29,5 +28,66 @@ body {
   font-size: 1.1rem;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+header {
+  color: var(--color-white);
+  height: 100vh;
+  overflow: hidden;
+}
+
+section {
+  left: 0;
+  min-height: 100vh;
+  padding: 3rem 18rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.section {
+  background-color: var(--color-primary);
+  -webkit-transform: translateY(-100%) scale(0);
+          transform: translateY(-100%) scale(0);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.section1 {
+  display: none;
+  -webkit-transform: translateY(0) scale(1);
+          transform: translateY(0) scale(1);
+}
+
+.section2 {
+  display: none;
+  -webkit-transform: translateY(0) scale(1);
+          transform: translateY(0) scale(1);
+}
+
+.section3 {
+  display: none;
+  -webkit-transform: translateY(0) scale(1);
+          transform: translateY(0) scale(1);
+}
+
+.section4 {
+  display: none;
+  -webkit-transform: translateY(0) scale(1);
+          transform: translateY(0) scale(1);
+}
+
+.controls {
+  position: fixed;
+  z-index: 5;
+  top: 50%;
+  right: 3%;
 }
 /*# sourceMappingURL=styles.css.map */
