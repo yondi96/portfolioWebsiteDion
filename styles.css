@@ -25,7 +25,7 @@
 
 body {
   background-color: var(--color-primary);
-  color: var(--color-white);
+  color: var(--color-grey0);
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.1rem;
   -webkit-transition: all .4s ease-in-out;
@@ -261,6 +261,22 @@ section {
   line-height: 2rem;
 }
 
+.about-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  padding: 3.5rem 0 5rem 0;
+}
+
+.about-container .right-about-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
 .btn-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -323,5 +339,34 @@ section {
   width: 100%;
   -webkit-transform: translateX(0);
           transform: translateX(0);
+}
+
+.main-title {
+  text-align: center;
+}
+
+.main-title h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.main-title h2 span {
+  color: var(--color-secondary);
+}
+
+.main-title h2 .bg-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: var(--color-grey-5);
+  -webkit-transition: var(--transition-1);
+  transition: var(--transition-1);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: -1;
+  font-size: 6.2rem;
+  font-weight: 800;
 }
 /*# sourceMappingURL=styles.css.map */

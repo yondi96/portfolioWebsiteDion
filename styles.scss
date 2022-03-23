@@ -26,7 +26,7 @@
 
 body {
   background-color: var(--color-primary);
-  color: var(--color-white);
+  color: var(--color-grey0);
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.1rem;
   transition: all .4s ease-in-out;
@@ -209,6 +209,19 @@ section {
   }
 }
 
+// About Section
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3.5rem 0 5rem 0;
+  
+  .right-about-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+}
+
 
 // reusables
 .btn-container {
@@ -259,5 +272,35 @@ section {
       transform: translateX(0);
     }
 
+  }
+}
+
+
+// ABOUT section
+.main-title {
+  text-align: center;
+
+  h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    position: relative;
+    text-transform: uppercase;
+
+    span {
+      color: var(--color-secondary);
+    }
+    .bg-text {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+
+      color: var(--color-grey-5);
+      transition: var(--transition-1);
+      transform: translate(-50%, -50%);
+      z-index: -1;
+
+      font-size: 6.2rem;
+      font-weight: 800;
+    }
   }
 }
