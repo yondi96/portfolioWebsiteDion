@@ -26,6 +26,7 @@
 body {
   background-color: var(--color-primary);
   color: var(--color-grey0);
+  cursor: default;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.1rem;
   -webkit-transition: all .4s ease-in-out;
@@ -724,6 +725,35 @@ section {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+  margin-right: 5%;
+}
+
+.contact-content-container .left-contact h4 {
+  font-size: 2rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+.contact-content-container .left-contact p {
+  margin: 1rem 0;
+  line-height: 2rem;
+}
+
+.contact-content-container .left-contact .contact-info .contact-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-content-container .left-contact .contact-info .contact-item p {
+  margin: 0.3rem 0 !important;
+  padding: 0 !important;
 }
 
 .contact-content-container .right-contact {
@@ -759,5 +789,14 @@ section {
 
 .contact-content-container .right-contact .first-input-control :last-child {
   margin-left: 1rem;
+}
+
+.contact-content-container .right-contact .submit-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 /*# sourceMappingURL=styles.css.map */

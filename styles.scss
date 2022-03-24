@@ -27,6 +27,7 @@
 body {
   background-color: var(--color-primary);
   color: var(--color-grey0);
+  cursor: default;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.1rem;
   transition: all .4s ease-in-out;
@@ -597,6 +598,30 @@ section {
   padding-top: 3.3rem;
   .left-contact {
     flex: 2;
+    margin-right: 5%;
+
+    h4 {
+      font-size: 2rem;
+      margin-top: 1rem;
+      text-transform: uppercase;
+    }
+    p {
+      margin: 1rem 0;
+      line-height: 2rem;
+    }
+
+    .contact-info {
+      .contact-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+          margin: 0.3rem 0 !important;
+          padding: 0 !important;
+        }
+      }
+    }
   }
   .right-contact {
     flex: 3;
@@ -624,6 +649,10 @@ section {
       :last-child {
         margin-left: 1rem;
       }
+    }
+    .submit-btn {
+      display: flex;
+      justify-content: flex-start;
     }
   }
 }
