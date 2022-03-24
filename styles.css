@@ -523,7 +523,7 @@ section {
 }
 
 .stat-title::before {
-  background-color: var(--color-grey-5);
+  background-color: var(--color-secondary);
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   content: '';
@@ -531,6 +531,7 @@ section {
   left: 50%;
   top: 0;
   width: 40%;
+  position: absolute;
 }
 
 .timeline {
