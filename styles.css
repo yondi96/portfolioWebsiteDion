@@ -653,8 +653,10 @@ section {
 }
 
 .portfolios .portfolio-item .hover-items h3 {
-  color: var(--color-grey-1);
+  color: var(--color-primary);
+  cursor: default;
   font-size: 1.5rem;
+  font-weight: 800;
   margin-bottom: 1.5rem;
 }
 
@@ -702,5 +704,11 @@ section {
 
 .portfolios .portfolio-item .hover-items .icons .icon:hover i {
   color: var(--color-primary);
+}
+
+.portfolio-item:hover .hover-items {
+  opacity: 0.85;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 /*# sourceMappingURL=styles.css.map */
