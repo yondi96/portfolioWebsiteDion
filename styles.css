@@ -23,6 +23,20 @@
   --transition-1: all .4s ease-in-out;
 }
 
+.light-mode {
+  --color-primary:  #C69B7B;
+  --color-secondary: #3A3845;
+  --color-white:  #000;
+  --color-black: #F7CCAC;
+  --color-grey0:  #12181b;
+  --color-grey-1:  #2a2e35;
+  --color-grey-2:  #454e56;
+  --color-grey-3: #dbe1e8;
+  --color-grey-4:  #f8f8f8;
+  --color-grey-5: #b2becd;
+  --color-grey-6:  #6c7983;
+}
+
 body {
   background-color: var(--color-primary);
   color: var(--color-grey0);
@@ -863,5 +877,40 @@ section {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.theme-btn {
+  background-color: var(--color-grey-4);
+  border-radius: 50%;
+  -webkit-box-shadow: var(--box-shadow-1);
+          box-shadow: var(--box-shadow-1);
+  cursor: pointer;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  position: fixed;
+  right: 3%;
+  bottom: 5%;
+  height: 67px;
+  width: 67px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.theme-btn:active {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.theme-btn i {
+  color: var(--color-grey-2);
+  font-size: 1.4rem;
+  pointer-events: none;
 }
 /*# sourceMappingURL=styles.css.map */
