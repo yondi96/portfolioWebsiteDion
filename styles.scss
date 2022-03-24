@@ -619,5 +619,11 @@ section {
         width: 100%;
       }
     }
+    .first-input-control {
+      display: flex;
+      :last-child {
+        margin-left: 1rem;
+      }
+    }
   }
 }

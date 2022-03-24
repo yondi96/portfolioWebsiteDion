@@ -750,4 +750,14 @@ section {
   resize: none;
   width: 100%;
 }
+
+.contact-content-container .right-contact .first-input-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-content-container .right-contact .first-input-control :last-child {
+  margin-left: 1rem;
+}
 /*# sourceMappingURL=styles.css.map */
