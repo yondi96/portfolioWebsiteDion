@@ -921,6 +921,28 @@ section {
   header .right-header {
     padding: 0 !important;
   }
+  .header-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+  .left-header .h-shape {
+    display: none;
+  }
+  .right-header {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .right-header .name {
+    font-size: 2.4rem !important;
+    padding: 1rem;
+  }
+  .header-content .left-header .image {
+    margin: 0 auto;
+    width: 90%;
+  }
   .controls {
     background-color: var(--color-grey-5);
     top: auto;
@@ -945,27 +967,60 @@ section {
     height: 50px;
     width: 50px;
   }
-  .header-content {
+  .about-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .about-container .right-about-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding-top: 2.5rem;
+  }
+  .about-container .left-about-container {
+    padding-right: 0;
+  }
+  .about-container .left-about-container p {
+    padding-left: 0;
+  }
+  .timeline {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     padding-bottom: 6rem;
   }
-  .left-header .h-shape {
-    display: none;
+  .about-stats .progress-bars {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
-  .right-header {
-    -ms-grid-row: 1;
-    grid-row: 1;
-    margin: 0 auto;
-    width: 90%;
+  .portfolios {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding-bottom: 6rem;
   }
-  .right-header .name {
-    font-size: 2.4rem !important;
-    padding: 1rem;
+  .section {
+    padding: 2rem 2.4rem;
   }
-  .header-content .left-header .image {
-    margin: 0 auto;
-    width: 90%;
+  .contact-content-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-content-container .right-contact {
+    margin-left: 0;
+    margin-top: 2.4rem;
+  }
+  .contact-content-container .right-contact form .first-input-control {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-content-container .right-contact form .first-input-control :last-child {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+  .contact-content-container .right-contact form .submit-btn {
+    margin-bottom: 4.5rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
