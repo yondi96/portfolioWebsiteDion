@@ -589,3 +589,35 @@ section {
   opacity: 0.85;
   transform: scale(1);
 }
+
+
+// CONTACT
+.contact-content-container {
+  display: flex;
+  padding-top: 3.3rem;
+  .left-contact {
+    flex: 2;
+  }
+  .right-contact {
+    flex: 3;
+    margin-left: 3rem;
+    .input-control {
+      margin: 1.5rem 0;
+
+      input, textarea {
+        background-color: var(--color-grey-5);
+        border-radius: 30px;
+        color: var(--color-grey-1);
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+
+        border: none;
+        outline: none;
+        padding: .7rem 1rem;
+        resize: none;
+        width: 100%;
+      }
+    }
+  }
+}
