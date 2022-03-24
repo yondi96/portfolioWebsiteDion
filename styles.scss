@@ -57,14 +57,14 @@ a {
 
 header {
   color: var(--color-white);
-  min-height: 100vh;
+  height: 100vh;
   overflow: hidden;
 }
 
 // styling sections
 section {
   left: 0;
-  min-height: 100vh;
+  height: 100vh;
   padding: 3rem 18rem;
   position: absolute;
   top: 0;
@@ -163,7 +163,7 @@ section {
   color: var(--color-white) !important;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 100vh;
+  min-height: 100vh;
   
   .left-header {
     display: flex;
