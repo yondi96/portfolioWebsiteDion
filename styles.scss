@@ -33,7 +33,7 @@
   --color-grey-2:  #3A3845;
   --color-grey-3: #000;
   --color-grey-4:  #f8f8f8;
-  --color-grey-5: #b2becd;
+  --color-grey-5:  #8a99ab; // #b2becd;
   --color-grey-6:  #6c7983;
 }
 
@@ -213,10 +213,12 @@ section {
     padding-right: 17rem;
 
     .name {
+      font-family: 'Nunito', sans-serif;
       font-size: 3rem;
       margin-bottom: 6rem;
       span {
         color: var(--color-secondary);
+        font-family: 'Marck Script', cursive;
       }
     }
     p {
@@ -423,7 +425,7 @@ section {
           }
 
           .sql {
-            width: 40%;
+            width: 30%;
           }
 
           .python {
@@ -726,7 +728,7 @@ section {
   cursor: pointer;
   transition: all 0.1s ease-in-out;
 
-  position: fixed;
+  position: fixed !important;
   right: 3%;
   bottom: 5%;
   height: 67px;
@@ -745,6 +747,74 @@ section {
     pointer-events: none;
   }
 }
+
+
+// Tooltip
+.tooltip {
+  position:relative;
+}
+
+.tooltip:before {
+  content: attr(data-text);
+  position:absolute;
+  
+  /* vertically center */
+  top:50%;
+  transform:translateY(-50%);
+  
+  /* move to right */
+  left:100%;
+  margin-left:10px; 
+  
+  /* basic styles */
+  background: var(--color-grey-6);
+  border-radius:10px;
+  color: var(--color-grey0);
+  padding:10px;
+  text-align:center;
+  width:80px;
+
+  display:none; /* hide by default */
+}
+
+.tooltip:hover:before {
+  display:block;
+}
+
+
+.tooltip:after {
+  content: "";
+  position:absolute;
+  
+  /* position tooltip correctly */
+  right:100%;
+  margin-left:-5px;
+ 
+  /* vertically center */
+  top:50%;
+  transform:translateY(-50%);
+ 
+  /* the arrow */
+  border:10px solid var(--color-grey-6);
+  border-color: transparent var(--color-grey-6) transparent transparent;
+  
+  display:none;
+}
+
+.tooltip:hover:before, .tooltip:hover:after {
+  display:block;
+}
+
+.tooltip.left:before {
+  /* reset defaults */
+  left:initial;
+  margin:initial;
+
+  /* set new values */
+  right:100%;
+  margin-right:15px;
+}
+
 
 
 @import './media';
