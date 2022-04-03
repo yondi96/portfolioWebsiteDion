@@ -56,7 +56,7 @@ a {
 
 header {
   color: var(--color-white);
-  height: 100vh;
+  max-height: 100vh;
   overflow: hidden;
 }
 
@@ -1192,9 +1192,9 @@ section {
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1200px) {
   header {
-    height: auto;
+    max-height: 100%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
