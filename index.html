@@ -18,9 +18,6 @@
 </head>
 <body class="main">
 
-  <!-- ! check for red highlights - need fixing -->
-  <!-- ! wordings and content needs some editing and additionals -->
-
   <header class="section section1 header active" id="home">
     <div class="header-content">
       <div class="left-header">
@@ -325,26 +322,31 @@
             </div>
           </div>
 
+          <!-- * working hear -->
           <div class="right-contact">
-            <form action="" class="contact-form">
+            <form action="https://formsubmit.co/bautista.dioncarlo@gmail.com" method="POST" class="contact-form">
               <div class="input-control first-input-control">
-                <input type="text" required placeholder="NAME">
-                <input type="email" required placeholder="EMAIL">
+                <input type="text" required placeholder="NAME" name="name" maxlength = "40">
+                <input type="email" required placeholder="EMAIL" name="email" maxlength = "60">
               </div>
               <div class="input-control">
-                <input type="text" required placeholder="TOPIC">
+                <input type="text" placeholder="TOPIC (optional)" name="topic" maxlength = "40">
               </div>
               <div class="input-control">
-                <textarea name="" id="" cols="15" rows="7" placeholder="MESSAGE.."></textarea>
+                <textarea name="text" cols="15" rows="7" placeholder="MESSAGE.." maxlength = "1000"></textarea>
               </div>
-              <div class="submit-btn">
+  
+              <button type="submit" class="form-btn" role="button">
                 <a href="#" class="main-btn">
                   <span class="btn-text">SEND</span>
                   <span class="btn-icon">
                     <i class="fa-solid fa-paper-plane"></i>
                   </span>
                 </a>
-              </div>
+              </button>
+
+              <!-- ! insert thanks domain at value -->
+              <input type="hidden" name="_next" value="">
             </form>
           </div>
 
